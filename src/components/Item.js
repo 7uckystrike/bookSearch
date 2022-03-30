@@ -5,13 +5,11 @@ const Item = props => {
     <li>
       <dl>
         <dt>
-          <img src={props.thumbnail} alt={props.thumbnail} />
+          <img src={props.thumbnail} alt={props.thumbnail} className="book_img"/>
         </dt>
         <dd>
-          <h4>{props.title}</h4>
-          <p>{props.blogname}</p>
-          <article>{props.contents}</article>
-          <a href={props.url}>링크 바로가기</a>
+          <h4 className="book_title">{props.title}</h4>
+          <a href={props.url} target="_blank" className="book_link">상세정보</a>
         </dd>
       </dl>
     </li>
