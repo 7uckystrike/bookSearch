@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import { blogSearch } from "../api"
 import Item from "./Item";
-
+import "./Search.css"
 
 const Search = props => {
   const [blogs, setBlogs] = useState([]);
@@ -42,7 +42,7 @@ const Search = props => {
 }
 
   return (
-    <div>
+    <div claaName="book_container">
       <input 
         type="search" 
         placeholder="검색어를 입력하시오" 
@@ -50,6 +50,7 @@ const Search = props => {
         onKeyDown={onEnter}
         onChange={onTextUpdate}
         value={text} 
+        className="book_search"
       />
     <ul>
       {blogs.map(
@@ -58,7 +59,6 @@ const Search = props => {
             key={index}
             thumbnail={blog.thumbnail}
             title={blog.title}
-            blogname={blog.blogname}
             contents={blog.contents}
             url={blog.url}
           />
@@ -67,6 +67,7 @@ const Search = props => {
     </div>
   )
 }
+
 
 export default Search;
 
