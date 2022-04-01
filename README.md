@@ -1,4 +1,4 @@
-# React BOOK Search App
+# React BOOK Search page
 
 1.기술
  - html
