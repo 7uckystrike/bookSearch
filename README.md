@@ -19,13 +19,7 @@
     
 <br/>
 
-4.예정
- - 도서 상세 페이지
- - 좋아요 기능
-
-<br/>
-
-5.결과물
+6.결과물
 
 http://7uckystrike.github.io/bookSearch
 
