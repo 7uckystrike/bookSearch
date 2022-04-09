@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react"
-import { blogSearch } from "../api"
-import Item from "./Item";
-import "./Search.css"
+import { bookSearch } from "../api"
+import Item from "../components/Item";
+import "./Search.css";
 
 const Search = props => {
-  const [blogs, setBlogs] = useState([]);
+  const [book, setBooks] = useState([]);
   const [text, setText] = useState("");
   const [query, setQuery] = useState("");
 
@@ -32,12 +32,12 @@ const Search = props => {
       size : 10
     };
 
-  const { data } = await blogSearch(params);
+  const { data } = await bookSearch(params);
 
   if (reset) {
-  setBlogs(data.documents);
+  setBooks(data.documents);
   } else {
-    setBlogs(blogs.concat(data.documents));
+    setBooks(book.concat(data.documents));
   }
 }
 
@@ -53,14 +53,14 @@ const Search = props => {
         className="book_search"
       />
     <ul>
-      {blogs.map(
-        (blog, index) => (
+      {book.map(
+        (book, index) => (
           <Item
             key={index}
-            thumbnail={blog.thumbnail}
-            title={blog.title}
-            contents={blog.contents}
-            url={blog.url}
+            thumbnail={book.thumbnail}
+            title={book.title}
+            contents={book.contents}
+            url={book.url}
           />
         ))}
     </ul>
