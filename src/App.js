@@ -1,6 +1,7 @@
 import BooksNew from "./components/BooksNew"
 import Bestseller from "./components/Bestseller";
 import Header from "./components/Header"
+import Slide from "./components/Slide"
 
 function App() {
   return(
@@ -8,7 +9,7 @@ function App() {
     <Header />
     <Bestseller />
     <div>
-      <h1>왜 안ㅁ거히지?  </h1>
+      <Slide />
     <BooksNew />
     </div>
 
