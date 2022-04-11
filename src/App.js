@@ -1,19 +1,20 @@
-import React from "react";
-import Search from "./routes/Search"
-import Header from "./components/Header"
-import Book from "./components/Books"
+import BooksNew from "./components/BooksNew"
 import Bestseller from "./components/Bestseller";
+import Header from "./components/Header"
 
-const App = () => {
-  return (
+function App() {
+  return(
     <>
-      <Header />
-      <Book />
-      <Bestseller />
-      <Search />
+    <Header />
+    <Bestseller />
+    <div>
+      <h1>왜 안ㅁ거히지?  </h1>
+    <BooksNew />
+    </div>
+
     </>
 
-  );
+  )
 }
 
 export default App;

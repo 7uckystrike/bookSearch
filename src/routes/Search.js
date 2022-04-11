@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react"
 import { bookSearch } from "../api"
 import Item from "../components/Item";
-import "./Search.css";
 
 const Search = props => {
   const [book, setBooks] = useState([]);
@@ -70,4 +69,3 @@ const Search = props => {
 
 
 export default Search;
-
