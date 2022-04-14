@@ -7,16 +7,18 @@
 
 .best_books {
   display: grid;
-  grid-template-columns: repeat(3, minmax(400px, 1fr));
-  grid-gap: 100px;
+  grid-template-columns: repeat(5, minmax(100px, 1fr));
+  grid-gap: 40px;
   padding: 50px;
-  width: 80%;
+  width: 90%;
   padding-top: 70px;
+  font-size: 10px;
+  text-align: center;
 }
 
-@media screen and (max-width: 1090px) {
-  .movies {
-    grid-template-columns: 1fr;
-    width: 100%;
-  }
+.best_title {
+  text-align: center;
+  width: 200px;
+  padding-bottom: 10px;
+  border-bottom: 5px solid rgb(87, 115, 168);
 }

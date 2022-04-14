@@ -14,7 +14,7 @@ function Bestseller() {
     const params = {
       query: "민음사",
       sort: "recency",
-      size: "9",
+      size: "10",
       target: "",
     };
 
@@ -27,7 +27,7 @@ function Bestseller() {
   return (
     <>
       <div className='best_container'>
-        <h1>베스트셀러</h1>
+        <h1 className='best_title'>베스트셀러</h1>
       </div>
       <div className='best_books'>
         {books.map((book, index) => (
