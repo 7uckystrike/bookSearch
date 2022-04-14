@@ -1,0 +1,20 @@
+.header_bar {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 20px;
+}
+
+.search_icon {
+  margin-right: 30px;
+}
+
+.header_join {
+  margin-right: 20px;
+}
+
+.header_join,
+.header_login {
+  margin-top: 15px;
+  margin-right: 20px;
+  padding: 10px 15px;
+}

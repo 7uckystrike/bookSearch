@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Books from "./Books"
 import { bookSearch } from "../api";
-
+import "../style/Bestseller.css"
 
 function Bestseller() {
   const [books, setBooks] = useState([]);
@@ -13,8 +13,8 @@ function Bestseller() {
   const getBooks = async () => {
     const params = {
       query: "민음사",
-      sort: "",
-      size: "10",
+      sort: "recency",
+      size: "9",
       target: "",
     };
 
@@ -23,12 +23,13 @@ function Bestseller() {
     } = await bookSearch(params);
     setBooks(documents);
   };
+
   return (
     <>
-      <div>
-        <h3>베스트셀러</h3>
+      <div className='best_container'>
+        <h1>베스트셀러</h1>
       </div>
-      <div>
+      <div className='best_books'>
         {books.map((book, index) => (
           <Books
             key={index}

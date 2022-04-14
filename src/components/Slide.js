@@ -1,12 +1,15 @@
-
 import "../style/Slide.css"
 
 function Slide() {
   return(
     <div>
-      <div className={'move_img1'}></div>
-      <div className={'move_img2'}></div>
-      <div className={'move_img3'}></div>
+      <h1 className={'slide_title'}>
+        당신을 기다리는
+        <br/>
+        천만권의 도서
+      </h1>
+      <div className={'slide_img1'}></div>
+      <div className={'slide_img2'}></div>
     </div>
 
   )
