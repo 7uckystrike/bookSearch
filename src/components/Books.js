@@ -7,7 +7,6 @@ function Books({ title, image, author }) {
       <h1>{title}</h1>
       <h3>{author}</h3>
     </div>
-
   );
 }
 

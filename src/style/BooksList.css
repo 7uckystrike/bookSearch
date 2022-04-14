@@ -1,11 +1,11 @@
-.best_container {
+.list_container {
   height: 100%;
   margin-top: 120px;
   display: flex;
   justify-content: center;
 }
 
-.best_books {
+.list_books {
   display: grid;
   grid-template-columns: repeat(5, minmax(100px, 1fr));
   grid-gap: 40px;
@@ -16,9 +16,9 @@
   text-align: center;
 }
 
-.best_title {
+.list_title {
   text-align: center;
-  width: 200px;
+  width: 250px;
   padding-bottom: 10px;
   border-bottom: 5px solid rgb(87, 115, 168);
 }

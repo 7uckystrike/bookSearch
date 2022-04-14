@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Books from "./Books";
 import { bookSearch } from "../api";
+import "../style/BooksList.css"
 
 function BooksNew() {
   const [books, setBooks] = useState([]);
@@ -23,20 +24,25 @@ function BooksNew() {
     setBooks(documents);
   };
 
-  return (
-    <div>
-      <h2>이달의 작가</h2>
-      <>
-      {books.map((book, index) => (
-            <Books 
-            key={index}
-            author={book.authors}
-            title={book.title}
-            image={book.thumbnail}
-            />
-      ))}
-      </>
-    </div>
-  )}
 
-  export default BooksNew
+
+  return (
+    <>
+      <div className={'list_container'}>
+        <h1 className='list_title'>이달의 작가, 정세랑</h1>
+      </div>
+      <div className={'list_books'}>
+        {books.map((book, index) => (
+              <Books 
+              key={index}
+              author={book.authors}
+              title={book.title}
+              image={book.thumbnail}
+              />
+        ))}
+        </div>
+    </>
+  )
+}
+
+export default BooksNew

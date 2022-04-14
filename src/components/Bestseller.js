@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Books from "./Books"
 import { bookSearch } from "../api";
-import "../style/Bestseller.css"
+import "../style/BooksList.css"
 
 function Bestseller() {
   const [books, setBooks] = useState([]);
@@ -26,10 +26,10 @@ function Bestseller() {
 
   return (
     <>
-      <div className='best_container'>
-        <h1 className='best_title'>베스트셀러</h1>
+      <div className='list_container'>
+        <h1 className='list_title'>베스트셀러</h1>
       </div>
-      <div className='best_books'>
+      <div className='list_books'>
         {books.map((book, index) => (
           <Books
             key={index}
@@ -42,7 +42,6 @@ function Bestseller() {
       </div>
     </>
   );
-
 }
 
 export default Bestseller
