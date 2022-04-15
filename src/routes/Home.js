@@ -1,3 +1,4 @@
+import Header from "../components/Header"
 import Bestseller from "../components/Bestseller";
 import Slide from "../components/Slide"
 import BooksNew from "../components/BooksNew"
@@ -7,6 +8,7 @@ import Footer from "../components/Footer";
 function Home() {
   return(
     <>
+      <Header />
       <Slide />
       <Bestseller />
       <BooksNew />
