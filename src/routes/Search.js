@@ -3,10 +3,10 @@ import { useState, useEffect } from "react"
 import Item from "../components/Item"
 import "../style/Search.css"
 
-const App = props => {
-  const [books, setBooks] = useState([]);
+function Search(props) {
   const [text, setText] = useState("");
   const [query, setQuery] = useState("");
+  const [books, setBooks] = useState([]);
 
   useEffect(() => {
     if (query.length > 0) {
@@ -40,7 +40,7 @@ const App = props => {
     } else {
       setBooks(books.concat(data.documents));
     }
-  };
+  }
 
   return (
     <div className={'search_line'}>
@@ -72,4 +72,4 @@ const App = props => {
   );
 };
 
-export default App;
+export default Search;

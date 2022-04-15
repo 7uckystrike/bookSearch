@@ -1,3 +1,5 @@
+import React from 'react';
+
 import Header from "../components/Header"
 import Bestseller from "../components/Bestseller";
 import Slide from "../components/Slide"

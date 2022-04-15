@@ -1,7 +1,6 @@
-import react from "react";
 import "../style/Item.css"
 
-const Item = props => {
+function Item(props) {
   return(
     <li>
       <dl>
@@ -11,7 +10,7 @@ const Item = props => {
         <dd>
           <strong className={'item_title'}>{props.title}</strong>
           <br/><br/>
-          <a href={props.url} target="_blank" className={'item_link'}>상세정보</a>
+          <a href={props.url} className={'item_link'}>상세정보</a>
         </dd>
       </dl>
     </li>
