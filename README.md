@@ -19,7 +19,7 @@
     
 <br/>
 
-6.결과물
+4.결과물
 
 http://7uckystrike.github.io/bookSearch
 
