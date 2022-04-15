@@ -21,5 +21,5 @@
 
 4.결과물
 
-http://7uckystrike.github.io/bookSearch
+http://7uckystrike.github.io/bookSearch/index
 
