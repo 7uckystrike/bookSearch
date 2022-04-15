@@ -1,11 +1,12 @@
 import PropTypes from "prop-types";
+import "../style/Item.css"
 
 function Books({ title, image, author }) {
   return (
     <div>
-      <img src={image} alt={title} />
-      <h1>{title}</h1>
-      <h3>{author}</h3>
+      <img src={image} alt={title} className={'item_img'} />
+      <h1 className={'item_title'}>{title}</h1>
+      <h3 className={'item_author'}>{author}</h3>
     </div>
   );
 }
@@ -14,9 +15,9 @@ export function GenresBook({ title, image }) {
   return (
     <div>
       <div>
-        <img src={image} alt={title} />
+        <img src={image} alt={title} className={'item_img'}/>
       </div>
-      <h3>{title}</h3>
+      <h3 className={'item_title'}>{title}</h3>
     </div>
   );
 }
