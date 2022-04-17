@@ -4,19 +4,19 @@ import {
   Routes,
 } from "react-router-dom"
 
-import Join from "./Routes/Join"
-import Search from "./Routes/Search"
-import Login from "./Routes/LogIn"
-import Home from "./Routes/Home"
+import Join from "./routes/Join"
+import Search from "./routes/Search"
+import Login from "./routes/Login"
+import Home from "./routes/Home"
 
-function App() {
-  return(
-    <Router basename={process.env.PUBLIC_URL}>
+const App = () => {
+  return (
+    <Router>
       <Routes>
-        <Route path="/Home" element={<Home />} />
-        <Route path="/Search" element={<Search />} />
-        <Route path="/Join" element={<Join />} />
-        <Route path="/Login" element={<Login />} />
+        <Route path="/" element={<Home />}></Route>
+        <Route path="Search" element={<Search />}></Route>
+        <Route path="Login" element={<Login />}></Route>
+        <Route path="Join" element={<Join />}></Route>
       </Routes>
     </Router>
   )

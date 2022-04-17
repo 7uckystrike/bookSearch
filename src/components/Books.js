@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import "../style/Item.css"
 
-function Books({ title, image, author }) {
+const Books= ({ title, image, author }) => {
   return (
     <div>
       <img src={image} alt={title} className={'item_img'} />
@@ -11,7 +11,7 @@ function Books({ title, image, author }) {
   );
 }
 
-export function GenresBook({ title, image }) {
+export const GenresBook = ({ title, image }) => {
   return (
     <div>
       <div>
@@ -21,10 +21,12 @@ export function GenresBook({ title, image }) {
     </div>
   );
 }
+
 Books.propTypes = {
   title: PropTypes.string,
   author: PropTypes.array,
   description: PropTypes.string,
   image: PropTypes.string,
 };
+
 export default Books;

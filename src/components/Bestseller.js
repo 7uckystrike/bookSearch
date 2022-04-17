@@ -3,7 +3,7 @@ import Books from "./Books"
 import { bookSearch } from "../api";
 import "../style/BooksList.css"
 
-function Bestseller() {
+const Bestseller = () => {
   const [books, setBooks] = useState([]);
 
   useEffect(() => {

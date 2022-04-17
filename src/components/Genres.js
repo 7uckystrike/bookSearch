@@ -3,7 +3,7 @@ import { bookSearch } from "../api";
 import { GenresBook } from "./Books";
 import "../style/Genres.css"
 
-function Genres() {
+const Genres = () => {
   const [books, setBooks] = useState([]);
   const [genres, setGenres] = useState("인문학");
 

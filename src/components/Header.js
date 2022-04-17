@@ -2,13 +2,11 @@ import "../style/Header.css";
 import { FaSearch } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
-
-
-function Header() {
+const Header = () => {
   return (
     <div>
       <div className={'header_bar'}>
-        <Link to ="/Home">
+        <Link to ="/">
           <h1 className={'header_title'}>BOOK APP</h1>
         </Link>
         <div>

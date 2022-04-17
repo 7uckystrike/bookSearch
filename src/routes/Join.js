@@ -1,8 +1,11 @@
+import Header from "../components/Header";
 import "../style/Members.css"
 
-function Join () {
+const Join = () => {
   return(
-    <div className={'container'}>
+    <>
+      <Header />
+      <div className={'container'}>
       <form className={'form'}>
         <h1 className={'title'}>책이랑 친해지기</h1>
         <div className={'join'}>
@@ -13,6 +16,7 @@ function Join () {
         </div>
       </form>
     </div>
+    </>
   )
 }
 

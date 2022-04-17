@@ -2,8 +2,10 @@ import { bookSearch } from "../api";
 import { useState, useEffect } from "react"
 import Item from "../components/Item"
 import "../style/Search.css"
+import Header from "../components/Header";
 
-function Search(props) {
+
+const Search = (props) => {
   const [text, setText] = useState("");
   const [query, setQuery] = useState("");
   const [books, setBooks] = useState([]);
@@ -43,6 +45,8 @@ function Search(props) {
   }
 
   return (
+    <>
+    <Header />
     <div className={'search_line'}>
       <input
         type="search"
@@ -69,6 +73,7 @@ function Search(props) {
         </div>
       </ul>
     </div>
+    </>
   );
 };
 

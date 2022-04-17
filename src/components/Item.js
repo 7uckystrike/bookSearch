@@ -1,6 +1,6 @@
 import "../style/Item.css"
 
-function Item(props) {
+const Item = (props) => {
   return(
     <li>
       <dl>

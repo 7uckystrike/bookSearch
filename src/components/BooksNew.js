@@ -3,7 +3,7 @@ import Books from "./Books";
 import { bookSearch } from "../api";
 import "../style/BooksList.css"
 
-function BooksNew() {
+const BooksNew = () => {
   const [books, setBooks] = useState([]);
 
   useEffect(() => {
@@ -24,8 +24,6 @@ function BooksNew() {
     setBooks(documents);
   };
 
-
-
   return (
     <>
       <div className={'list_container'}>
@@ -40,9 +38,9 @@ function BooksNew() {
               image={book.thumbnail}
               />
         ))}
-        </div>
+      </div>
     </>
   )
 }
 
-export default BooksNew
+export default BooksNew;

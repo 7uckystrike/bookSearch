@@ -1,6 +1,6 @@
 import "../style/Slide.css"
 
-function Slide() {
+const Slide = () => {
   return(
     <div>
       <h1 className={'slide_title'}>
