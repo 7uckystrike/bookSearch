@@ -7,6 +7,7 @@
  
 <br/>
 
-2.느낀점 
+2.결과물
+<br />
 http://7uckystrike.github.io/bookSearch
 
