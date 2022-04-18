@@ -16,14 +16,12 @@ const Search = (props) => {
     }
   }, [query]);
 
-  // 엔터를 눌렀을 때 호출 되는 함수
   const onEnter = e => {
     if (e.keyCode === 13) {
       setQuery(text);
     }
   };
 
-  // text 검색어가 바뀔 때 호출되는 함수.
   const onTextUpdate = e => {
     setText(e.target.value);
   };
@@ -50,7 +48,7 @@ const Search = (props) => {
     <div className={'search_line'}>
       <input
         type="search"
-        placeholder="검색어를 입력 하세요..."
+        placeholder="검색어를 입력 하세요!"
         name="query"
         className="search_input"
         onKeyDown={onEnter} // enter
