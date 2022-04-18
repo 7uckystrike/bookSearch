@@ -33,7 +33,6 @@ const BooksNew = () => {
         {books.map((book, index) => (
               <Books 
               key={index}
-              author={book.authors}
               title={book.title}
               image={book.thumbnail}
               />
