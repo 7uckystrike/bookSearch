@@ -34,7 +34,6 @@ const Bestseller = () => {
           <Books
             key={index}
             author={book.authors}
-            description={book.contents}
             title={book.title}
             image={book.thumbnail}
           />

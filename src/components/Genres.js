@@ -24,6 +24,7 @@ const Genres = () => {
     } = await bookSearch(params);
     setBooks(documents);
   }, [genres])
+
   const handleGenres = (e) => {
     const {
       target : { id },
@@ -54,7 +55,6 @@ const Genres = () => {
           <GenresBook
             key={index}
             author={book.authors}
-            description={book.contents}
             title={book.title}
             image={book.thumbnail}
           />
