@@ -27,7 +27,7 @@ const Bestseller = () => {
   return (
     <>
       <div className='list_container'>
-        <h1 className='list_title'>베스트셀러</h1>
+        <h1 className='list_title'>오늘의 책</h1>
       </div>
       <div className='list_books'>
         {books.map((book, index) => (

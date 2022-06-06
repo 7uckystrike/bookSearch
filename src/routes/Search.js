@@ -40,6 +40,8 @@ const Search = (props) => {
     } else {
       setBooks(books.concat(data.documents));
     }
+
+    console.log(data)
   }
 
   return (
@@ -63,8 +65,8 @@ const Search = (props) => {
               key={index}
               thumbnail={book.thumbnail}
               title={book.title}
-              blogname={book.blogname}
-              contents={book.contents}
+              price={book.price}
+              sale_price={book.sale_price}
               url={book.url}
             />
           ))}

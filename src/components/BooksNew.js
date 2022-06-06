@@ -12,9 +12,9 @@ const BooksNew = () => {
 
   const getBooks = async () => {
     const params = {
-      query: "정세랑",
+      query: "박완서",
       sort: "",
-      size: "5",
+      size: "10",
       target: "title",
     };
 
@@ -27,7 +27,7 @@ const BooksNew = () => {
   return (
     <>
       <div className={'list_container'}>
-        <h1 className='list_title'>이달의 작가, 정세랑</h1>
+        <h1 className='list_title'>영원한 현역작가, 박완서</h1>
       </div>
       <div className={'list_books'}>
         {books.map((book, index) => (

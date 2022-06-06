@@ -2,23 +2,19 @@
   height: 100%;
   margin-top: 70px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .list_books {
   display: grid;
-  grid-template-columns: repeat(5, minmax(100px, 1fr));
+  grid-template-columns: repeat(10, minmax(100px, 1fr));
   grid-gap: 40px;
-  padding: 50px;
-  width: 90%;
-  padding-top: 70px;
-  font-size: 10px;
+  padding-left: 20px;
+  width: 80%;
   text-align: center;
 }
 
 .list_title {
-  text-align: center;
-  width: 250px;
-  padding-bottom: 10px;
-  border-bottom: 5px solid rgb(87, 115, 168);
+  margin-left: 25px;
+  font-size: 25px;
 }

@@ -1,6 +1,9 @@
 import "../style/Item.css"
 
 const Item = (props) => {
+
+  //onst heartIcon = alreadyFavorite ? "💖" : "🤍";
+
   return(
     <li>
       <dl>
@@ -11,6 +14,7 @@ const Item = (props) => {
           <strong className={'item_title'}>{props.title}</strong>
           <br/><br/>
           <a href={props.url} className={'item_link'}>상세정보</a>
+          <button>하트</button>
         </dd>
       </dl>
     </li>
@@ -18,3 +22,5 @@ const Item = (props) => {
 }
 
 export default Item;
+
+
