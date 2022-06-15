@@ -6,10 +6,10 @@ import Genres from "../components/Genres";
 const Home = () => {
   return(
     <>
-    <Header />
-    <Bestseller />
-    <BooksNew />
-    <Genres />
+      <Header />
+      <Bestseller />
+      <BooksNew />
+      <Genres />
     </>
   )
 }

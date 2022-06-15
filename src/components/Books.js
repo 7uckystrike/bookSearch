@@ -2,6 +2,7 @@ import PropTypes from "prop-types";
 import "../style/Item.css"
 
 const Books= ({ title, image, author }) => {
+  
   return (
     <div>
       <img src={image} alt={title} className={'item_img'} />
