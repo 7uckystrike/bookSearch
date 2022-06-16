@@ -7,10 +7,10 @@ const TitleDiv = styled.div `
   margin-top: 50px;
   display: flex;
   justify-content: flex-start
-  margin-left:20px;
+  margin-left: 20px;
 
   .new_title {
-    margin-left: 25px;
+    margin-left: 20px;
     font-size: 25px; 
   }
 `

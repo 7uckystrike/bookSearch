@@ -1,12 +1,15 @@
-import React, { memo } from 'react';
+import React, { memo } from "react";
+import { MemoDiv } from "../../style/MemoCSS"
 
 const Memo = memo(
   ({ memo }) => {
     
     return (
-      <li>
-        {memo}
-      </li>
+      <MemoDiv>
+        <li>
+          {memo}
+        </li>
+      </MemoDiv>
     );
   }
 );

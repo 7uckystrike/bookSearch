@@ -8,6 +8,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+ul, li {
+ list-style: none;
+ margin:0;
+ padding:0;
+}
+
 a:link { color: rgb(3, 3, 3); text-decoration: none; }
 a:visited { color: rgb(2, 2, 2); text-decoration: none; }
 a:hover { color: #06AD3D; text-decoration: none; }

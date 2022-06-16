@@ -54,7 +54,6 @@ const MemoList = () => {
   return (
     <div>
       <div>
-        <h1>오늘은 어떤 문장을 좋아하시나요.</h1>
         <AddForm addMemo={addMemo} />
         <ul>
           {memoList.map((memoInfo) => {

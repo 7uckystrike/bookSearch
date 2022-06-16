@@ -6,12 +6,12 @@ const SearchInputDiv = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 40px;
+  padding-top: 100px;
 
   input {
     border: 0;
-    border-bottom: 1px solid #dddddd;
-    width: 200px;
+    border-bottom: 3px solid #000;
+    width: 300px;
     padding-left: 10px;
     padding-bottom: 10px;
     outline: none;

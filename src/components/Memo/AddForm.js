@@ -1,8 +1,11 @@
-import React, { useState, useRef, useEffect, memo } from 'react';
+import React, { useState, useRef, useEffect, memo } from "react"
+import {AddFormDiv} from "../../style/MemoCSS"
+import moment from 'moment';
 
 const AddForm = memo(({ addMemo }) => {
   const [value, setValue] = useState('');
   const input = useRef(null);
+  const nowTime = moment().format('YY년 MM월 DD일 HH시 mm분');
 
   useEffect(() => {
     input.current.focus();
@@ -14,12 +17,16 @@ const AddForm = memo(({ addMemo }) => {
   };
 
   return (
-    <form>
-      <input ref={input} value={value} onChange={onChangeInput} />
-      <button type="submit" onClick={addMemo(value)}>
-        add
-      </button>
-    </form>
+    <AddFormDiv>
+      <span>{nowTime}</span>
+      <p>지금 이 시각, 당신이 좋아하는 문장은</p>
+      <form>
+        <input ref={input} value={value} onChange={onChangeInput} />
+        <button type="submit" onClick={addMemo(value)}>
+          등록
+        </button>
+        </form>
+    </AddFormDiv>
   );
 });
 
