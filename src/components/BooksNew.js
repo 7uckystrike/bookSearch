@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Books from "./Books";
 import { bookSearch } from "../api";
-import "../style/BooksList.css"
+import { TitleDiv, BooksDiv } from "../style/BooksListCSS"
 
 const BooksNew = () => {
   const [books, setBooks] = useState([]);
@@ -26,18 +26,19 @@ const BooksNew = () => {
 
   return (
     <>
-      <div className={'list_container'}>
-        <h1 className='list_title'>영원한 현역작가, 박완서</h1>
-      </div>
-      <div className={'list_books'}>
+      <TitleDiv>
+        <h1 className="new_title">영원한 현역작가, 박완서</h1>
+      </TitleDiv>
+      <BooksDiv>
         {books.map((book, index) => (
               <Books 
               key={index}
-              title={book.title}
               image={book.thumbnail}
+              title={book.title}
               />
         ))}
-      </div>
+      </BooksDiv>
+      
     </>
   )
 }

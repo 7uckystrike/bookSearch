@@ -1,41 +1,38 @@
-import "../style/Item.css"
-import { useState } from "react"
+import { ItemDiv, ItemLi } from "../style/ItemCSS"
+import { useState} from "react"
 
 const Item = (props) => {
   const [button, setButton] = useState("🤍")
-  const title = props.title
+  const [title, setTitle] = useState(props.title)
 
   const onClick = () => {
     if(button === '🤍') {
       setButton("💖")
-      localStorage.setItem(title, JSON.stringify(props.thumbnail));
+      localStorage.setItem(title, JSON.stringify(title));
     }else{
       setButton("🤍")
-      window.localStorage.removeItem(title)
+      localStorage.removeItem(title)
     }
   }
 
   return(
     <>
-      <li>
-      <dl>
-        <dt>
-          <img src={props.thumbnail} alt={props.thumbnail} className={'item_img'}/>
-        </dt>
-        <dd>
-          <strong className={'item_title'}>{props.title}</strong>
-          <p>
-            <a href={props.url} className={'item_link'}>상세정보</a>
-            <button onClick={onClick}>{button}</button>
-          
-          </p>
-        </dd>
-      </dl>
-    </li>
-
-</>
-  
-
+      <ItemLi>
+        <dl>
+          <dt>
+            <img src={props.thumbnail} alt={props.thumbnail}/>
+          </dt>
+          <dd>
+            <ItemDiv>
+              <strong className="item_title">{props.title}</strong>
+              <br />
+              <a href={props.url} className="item_link">상세정보</a>
+              <button onClick={onClick}>{button}</button>
+            </ItemDiv>
+          </dd>
+        </dl>
+      </ItemLi>
+    </>
   )
 }
 

@@ -1,25 +1,14 @@
 import PropTypes from "prop-types";
-import "../style/Item.css"
+import { BooksBoxDiv } from "../style/BooksListCSS"
 
 const Books= ({ title, image, author }) => {
   
   return (
-    <div>
-      <img src={image} alt={title} className={'item_img'} />
-      <h1 className={'item_title'}>{title}</h1>
-      <h3 className={'item_author'}>{author}</h3>
-    </div>
-  );
-}
-
-export const GenresBook = ({ title, image }) => {
-  return (
-    <div>
-      <div>
-        <img src={image} alt={title} className={'item_img'}/>
-      </div>
-      <h3 className={'item_title'}>{title}</h3>
-    </div>
+    <BooksBoxDiv>
+      <img src={image} alt={title}/>
+      <p className="books_title">{title}</p>
+      <p className="books_author">{author}</p>
+    </BooksBoxDiv>
   );
 }
 

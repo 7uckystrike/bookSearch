@@ -10,5 +10,5 @@ body {
 
 a:link { color: rgb(3, 3, 3); text-decoration: none; }
 a:visited { color: rgb(2, 2, 2); text-decoration: none; }
-a:hover { color: rgb(45, 35, 173); text-decoration: none; }
-a:active { color: rgb(45, 35, 173); text-decoration: none;}
+a:hover { color: #06AD3D; text-decoration: none; }
+a:active { color: #06AD3D;; text-decoration: none;}

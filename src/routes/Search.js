@@ -1,9 +1,8 @@
 import { bookSearch } from "../api";
 import { useState, useEffect } from "react"
 import Item from "../components/Item"
-import "../style/Search.css"
 import Header from "../components/Header";
-
+import {SearchInputDiv, SearchBoxDiv} from "../style/SearchCSS"
 
 const Search = (props) => {
   const [text, setText] = useState("");
@@ -30,8 +29,8 @@ const Search = (props) => {
     const params = {
       query: query,
       sort: "accuracy", // accuracy | recency 정확도 or 최신
-      page: 1, // 페이지번호
-      size: 10 // 한 페이지에 보여 질 문서의 개수
+      page: 1, 
+      size: 10 
     };
 
     const { data } = await bookSearch(params);
@@ -40,39 +39,33 @@ const Search = (props) => {
     } else {
       setBooks(books.concat(data.documents));
     }
-
-    console.log(data)
   }
 
   return (
     <>
-    <Header />
-    <div className={'search_line'}>
-      <input
-        type="search"
-        placeholder="검색어를 입력 하세요!"
-        name="query"
-        className="search_input"
-        onKeyDown={onEnter} // enter
-        onChange={onTextUpdate} // change
-        value={text} // view
-      />
-
-      <ul>
-        <div className={'search_box'}>
-          {books.map((book, index) => (
-            <Item
-              key={index}
-              thumbnail={book.thumbnail}
-              title={book.title}
-              price={book.price}
-              sale_price={book.sale_price}
-              url={book.url}
-            />
-          ))}
-        </div>
-      </ul>
-    </div>
+      <Header />
+      <SearchInputDiv className="search_line">
+        <input
+          type="search"
+          placeholder="검색어를 입력 하세요!"
+          name="query"
+          onKeyDown={onEnter}
+          onChange={onTextUpdate}
+          value={text}
+        />
+        <ul>
+          <SearchBoxDiv>
+            {books.map((book, index) => (
+              <Item
+                key={index}
+                thumbnail={book.thumbnail}
+                title={book.title}
+                url={book.url}
+              />
+            ))}
+          </SearchBoxDiv>
+        </ul>
+      </SearchInputDiv>
     </>
   );
 };

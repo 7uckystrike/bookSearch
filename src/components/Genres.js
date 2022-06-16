@@ -1,7 +1,6 @@
 import { useCallback, useEffect, useState } from "react";
 import { bookSearch } from "../api";
-import { GenresBook } from "./Books";
-import "../style/Genres.css"
+import { GenresTitle, GenresDiv, GenresBox, BooksBoxDiv } from "../style/GenresCSS"
 
 const Genres = () => {
   const [books, setBooks] = useState([]);
@@ -42,15 +41,15 @@ const Genres = () => {
   }, [genres, getBooks]);
 
   return(
-    <div className={'genres_container'}>
-      <h1 className={'genres_title'}>장르별 추천</h1>
-      <div className={'genres_box'}>
-        <button id="소설" onClick={handleGenres} className={'genres_button'}>소설</button>
-        <button id="교양" onClick={handleGenres} className={'genres_button'}>교양</button>
-        <button id="과학" onClick={handleGenres} className={'genres_button'}>과학</button>
-        <button id="에세이" onClick={handleGenres} className={'genres_button'}>에세이</button>
-      </div>
-      <div className={'genres_books'}>
+    <GenresTitle>
+      <h1 className="genres_title">장르별 추천</h1>
+      <GenresBox>
+        <button id="소설" onClick={handleGenres} className="genres_button">소설</button>
+        <button id="교양" onClick={handleGenres} className="genres_button">교양</button>
+        <button id="과학" onClick={handleGenres} className="genres_button">과학</button>
+        <button id="에세이" onClick={handleGenres} className="genres_button">에세이</button>
+      </GenresBox>
+      <GenresDiv>
         {books.map((book, index) => (
           <GenresBook
             key={index}
@@ -58,12 +57,22 @@ const Genres = () => {
             title={book.title}
             image={book.thumbnail}
           />
-            ))}
-        </div>
-  </div>
+        ))}
+        </GenresDiv>
+    </GenresTitle>
   )
 }
 
+export const GenresBook = ({ title, image, author }) => {
+  return (
+    <BooksBoxDiv>
+      <img src={image} alt={title}/>
+      <p className="books_title">{title}</p>
+      <p className="books_author">{author}</p>
+    </BooksBoxDiv>
+  )}
+
+  
 export default Genres;
 
 
