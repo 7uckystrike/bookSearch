@@ -8,7 +8,7 @@ const AddFormDiv = styled.div `
   margin-top: 70px;
 
   input {
-    width:400px;
+    width: 400px;
     border: none;
     border-bottom: 3px solid #000;
     outline: none;
@@ -42,13 +42,12 @@ const AddFormDiv = styled.div `
 /* 메모 출력 부분 */
 const MemoDiv = styled.div `
   width: 480px;
-  height: 50px;
   margin: auto;
-  padding-bottom: 50px;
 
   li {
     border-bottom: 1px solid #000;
-    padding-bottom: 5px;
+    padding: 30px 5px;
+    margin: auto;
 
   }
 `
