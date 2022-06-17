@@ -39,18 +39,6 @@ const MemoList = () => {
     }, [id]
   );
 
-  const updateMemo = useCallback(
-    (id, memo) => {
-      const index = memoList.findIndex((memoInfo) => memoInfo.id === id);
-      const newMemoList = [...memoList];
-      newMemoList.splice(index, 1, {
-        id: id,
-        memo: memo,
-      });
-      setMemoList(newMemoList);
-    }, [memoList]
-  );
-
   return (
     <div>
       <div>
@@ -62,7 +50,6 @@ const MemoList = () => {
                 key={memoInfo.id}
                 id={memoInfo.id}
                 memo={memoInfo.memo}
-                updateMemo={updateMemo}
               />
             )
           })}

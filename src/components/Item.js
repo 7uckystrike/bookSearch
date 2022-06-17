@@ -9,9 +9,11 @@ const Item = (props) => {
     if(button === '🤍') {
       setButton("💖")
       localStorage.setItem(title, JSON.stringify(title));
+      
     }else{
       setButton("🤍")
       localStorage.removeItem(title)
+      setTitle("")
     }
   }
 

@@ -15,7 +15,7 @@ const SearchInputDiv = styled.div`
     padding-left: 10px;
     padding-bottom: 10px;
     outline: none;
-    margin-bottom: 20px;
+    margin-bottom: 80px;
   }
 `
 
@@ -24,7 +24,8 @@ const SearchBoxDiv = styled.div `
   display: grid;
   grid-template-columns: repeat(4, minmax(80px, 1fr));
   grid-gap: 40px;
-  margin-right: 25px;
+  margin-left: 5px;
+  
 
   li {
     list-style-type: none;

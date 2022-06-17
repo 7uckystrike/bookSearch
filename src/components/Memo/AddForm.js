@@ -25,7 +25,7 @@ const AddForm = memo(({ addMemo }) => {
       <span>{nowTime}</span>
       <p>지금 이 시각, 당신이 좋아하는 문장은</p>
       <form>
-        <input ref={input} value={value} onChange={onChangeInput}/>
+        <input ref={input} value={value} onChange={onChangeInput} maxLen/>
         <button type="submit" onClick={addMemo(value)}>
           등록
         </button>
