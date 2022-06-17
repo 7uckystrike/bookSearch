@@ -42,12 +42,16 @@ const AddFormDiv = styled.div `
 /* 메모 출력 부분 */
 const MemoDiv = styled.div `
   width: 480px;
-  height: 30px;
-  padding-left: 20px;
-  padding-top: 15px;
-  border: 1px solid #000;
+  height: 50px;
   margin: auto;
-  margin-bottom: 20px;
+  padding-bottom: 15px;
+
+  li {
+    border-bottom: 1px solid #000;
+    padding-bottom: 5px;
+
+
+  }
 `
 
 export { AddFormDiv, MemoDiv }
