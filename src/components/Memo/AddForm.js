@@ -14,14 +14,18 @@ const AddForm = memo(({ addMemo }) => {
 
   const onChangeInput = (event) => {
     setValue(event.target.value);
+    if(value.length > 130) {
+      alert("최대 130자까지 가능합니다.")
+    }
   };
+
 
   return (
     <AddFormDiv>
       <span>{nowTime}</span>
       <p>지금 이 시각, 당신이 좋아하는 문장은</p>
       <form>
-        <input ref={input} value={value} onChange={onChangeInput} />
+        <input ref={input} value={value} onChange={onChangeInput}/>
         <button type="submit" onClick={addMemo(value)}>
           등록
         </button>

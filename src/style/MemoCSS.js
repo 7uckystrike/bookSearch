@@ -44,12 +44,11 @@ const MemoDiv = styled.div `
   width: 480px;
   height: 50px;
   margin: auto;
-  padding-bottom: 15px;
+  padding-bottom: 50px;
 
   li {
     border-bottom: 1px solid #000;
     padding-bottom: 5px;
-
 
   }
 `
