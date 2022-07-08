@@ -1,4 +1,4 @@
-# VanillaJS-TodoList
+# Book Search Page
 
 <br />
 
@@ -13,3 +13,4 @@ https://7uckystrike.github.io/bookSearch/
 <br />
 
 ### Preview
+<img src="https://github.com/7uckystrike/bookSearch/blob/master/preview/booksearch.gif?raw=true">
