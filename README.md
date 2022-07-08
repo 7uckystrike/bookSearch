@@ -3,7 +3,7 @@
 <br />
 
 ### Demo
-https://7uckystrike.github.io/react-book-search/
+https://7uckystrike.github.io/bookSearch/
 
 <br />
 
