@@ -3,6 +3,7 @@ import Bestseller from "../components/Bestseller";
 import BooksNew from "../components/BooksNew"
 import Genres from "../components/Genres";
 
+
 const Home = () => {
   return(
     <>

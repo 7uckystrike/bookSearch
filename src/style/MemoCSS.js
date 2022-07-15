@@ -6,6 +6,7 @@ const AddFormDiv = styled.div `
   margin-left: 20px;
   text-align: center;
   margin-top: 70px;
+  height: 100vh;
 
   input {
     width: 400px;
@@ -23,7 +24,6 @@ const AddFormDiv = styled.div `
     padding: 9px 13px;
     color: #fff;
     cursor: pointer;
-    padding : 
   }
 
   p {
