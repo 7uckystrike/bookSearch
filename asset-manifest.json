@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/bookSearch/static/css/main.3d2b566a.css",
-    "main.js": "/bookSearch/static/js/main.db6b2ab6.js",
+    "main.css": "/bookSearch/static/css/main.8aa0e9c2.css",
+    "main.js": "/bookSearch/static/js/main.349c3a72.js",
     "index.html": "/bookSearch/index.html",
-    "main.3d2b566a.css.map": "/bookSearch/static/css/main.3d2b566a.css.map",
-    "main.db6b2ab6.js.map": "/bookSearch/static/js/main.db6b2ab6.js.map"
+    "main.8aa0e9c2.css.map": "/bookSearch/static/css/main.8aa0e9c2.css.map",
+    "main.349c3a72.js.map": "/bookSearch/static/js/main.349c3a72.js.map"
   },
   "entrypoints": [
-    "static/css/main.3d2b566a.css",
-    "static/js/main.db6b2ab6.js"
+    "static/css/main.8aa0e9c2.css",
+    "static/js/main.349c3a72.js"
   ]
 }
