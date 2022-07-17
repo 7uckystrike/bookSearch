@@ -20,8 +20,8 @@ const GenresBox = styled.div `
     border-radius: 3px;
     margin-right: 10px;
     padding: 9px 13px;
-    background-color: #06AD3D;
-    color: #fff;
+    background-color: #f1de95;
+    color: #000;
   } 
   
 `

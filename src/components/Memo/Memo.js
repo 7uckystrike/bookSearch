@@ -7,7 +7,7 @@ const Memo = memo(
     return (
       <MemoDiv>
         <li>
-          {memo}
+         {memo}
         </li>
       </MemoDiv>
     );

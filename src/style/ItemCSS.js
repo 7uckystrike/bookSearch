@@ -2,7 +2,7 @@ import styled from "@emotion/styled"
 
 const ItemLi = styled.li `
   display: flex;
-  justfiy-content: center;
+  justify-content: center;
   flex-direction: column;
   text-align: center;
   
@@ -19,15 +19,15 @@ const ItemLi = styled.li `
 
 const ItemDiv = styled.div `
   .item_title {
-    color: #06AD3D;
+    color: #f19995;
     font-size: 15px;
     margin-right: 35px;
     margin: auto;
   }
 
   .item_link {
-    background-color: #06AD3D;
-    color: #fff;
+    background-color: #bcdce4;
+    color: #000;
     font-size: 12px; 
     width: 50px;
     margin-top: 20px;

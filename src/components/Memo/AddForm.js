@@ -22,14 +22,22 @@ const AddForm = memo(({ addMemo }) => {
 
   return (
     <AddFormDiv>
-      <span>{nowTime}</span>
-      <p>지금 이 시각, 당신이 좋아하는 문장은</p>
-      <form>
-        <input ref={input} value={value} onChange={onChangeInput} maxLen/>
-        <button type="submit" onClick={addMemo(value)}>
+      <span className='time'>{nowTime}</span>
+      <p className='title'>지금 이 시각, 당신이 좋아하는 문장은</p>
+      <form className='form'>
+        <textarea 
+          className='area'
+          ref={input} 
+          value={value} 
+          onChange={onChangeInput} 
+          />
+        <button 
+          className='button'
+          type='submit'
+          onClick={addMemo(value)}>
           등록
         </button>
-        </form>
+      </form>
     </AddFormDiv>
   );
 });

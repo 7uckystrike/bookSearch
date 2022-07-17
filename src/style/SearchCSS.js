@@ -6,30 +6,30 @@ const SearchInputDiv = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 100px;
+  padding-top: 80px;
 
   input {
     border: 0;
-    border-bottom: 3px solid #000;
+    border-bottom: 2px solid #000;
     width: 300px;
     padding-left: 10px;
     padding-bottom: 10px;
     outline: none;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
   }
 `
 
 const SearchBoxDiv = styled.div `
   margin-bottom: 50px;
   display: grid;
-  grid-template-columns: repeat(4, minmax(80px, 1fr));
-  grid-gap: 40px;
+  grid-template-columns: repeat(3, minmax(80px, 1fr));
+  grid-gap: 30px;
   margin-left: 5px;
-  
 
   li {
     list-style-type: none;
     border: 1px solid #dddddd;
+    padding: 0 10px;
   }
 `
 
