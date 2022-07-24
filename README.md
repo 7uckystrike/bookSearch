@@ -13,4 +13,6 @@ https://7uckystrike.github.io/bookSearch/
 <br />
 
 ### Preview
-<img src="https://github.com/7uckystrike/bookSearch/blob/master/preview/%E1%84%80%E1%85%A5%E1%86%B7%E1%84%89%E1%85%A2%E1%86%A8.png?raw=true">
+<img src="https://github.com/7uckystrike/bookSearch/blob/master/preview/index.png?raw=true">
+<img src="https://github.com/7uckystrike/bookSearch/blob/master/preview/search.png?raw=true">
+<img src="https://github.com/7uckystrike/bookSearch/blob/master/preview/memo.png?raw=true">
